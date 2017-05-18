@@ -30,7 +30,7 @@ static void callback_audio(void * p_data, int32_t result, void * p_app_data) {
     mail_t *mail = mail_box.alloc();
 
     if (result < 0) {
-        printf("error %d\r\n", result);
+        printf("error %ld\r\n", result);
     }
     if (mail == NULL) {
         printf("error mail alloc\r\n");
